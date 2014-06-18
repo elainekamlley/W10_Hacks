@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title> W10_Hack</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesh.css') }}">
+	</head>
+	<body>
+			<h1> Hello, world! </h1>
+			{% for u in users: %}
+				{{u.firstname}} {{u.lastname}}
+				<br> {{u.username}}
+			{% endfor %}
+
+	<!-- I am feeling stuck here. I am trying to pull out the usernames from the database but it is giving me a internal server error. Is it an issue with my database fields? -->
+	</body>
+</html>
